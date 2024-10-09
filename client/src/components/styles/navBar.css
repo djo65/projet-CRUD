@@ -1,0 +1,35 @@
+@keyframes colorWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.containerNavBar {
+  background: linear-gradient(
+    90deg,
+    #361b08,
+    #3f071e,
+    #1e0642,
+    #094035,
+    #361b08
+  );
+  background-size: 200% 200%;
+  animation: colorWave 30s ease-in-out infinite;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+
+  .buttonAcceuille {
+    display: flex;
+    justify-content: end;
+  }
+
+  .buttonNav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

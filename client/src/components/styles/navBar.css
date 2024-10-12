@@ -33,3 +33,11 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .buttonNav {
+    gap: 5rem;
+    margin-right: 3rem;
+    padding: 10px;
+  }
+}

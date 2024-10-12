@@ -9,3 +9,9 @@
   padding: 0.2rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 780px) {
+  .buttonNavBar {
+    font-size: 15px;
+  }
+}

@@ -9,12 +9,13 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 8px solid #ccc;
     height: 25vh;
     width: 100%;
     max-width: 40vw;
     margin: 0 auto;
     border-radius: 8px;
+    border-style: ridge;
     background-color: #f9f9f9;
 
     div {
@@ -22,6 +23,7 @@
       flex-direction: column;
       justify-content: center;
       width: 20vw;
+      height: 11vh;
       gap: 15px;
 
       input {
@@ -38,6 +40,30 @@
       background-color: #222020;
       color: #ccc;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contactForm {
+    h2 {
+      font-size: 2rem;
+      padding: 10px;
+    }
+    form {
+      height: 35vh;
+
+      button {
+        height: 2rem;
+        width: 5rem;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        width: 30vw;
+      }
     }
   }
 }

@@ -18,6 +18,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+    overflow-y: scroll;
 
     .row {
       display: flex;
@@ -26,6 +27,7 @@
       padding: 10px;
       border-bottom: 1px solid #ddd;
       list-style-type: none;
+      align-items: center;
     }
 
     .header {
@@ -50,7 +52,8 @@
     .colName,
     .colPhone,
     .colActions {
-      width: 20%;
+      width: 20vw;
+      max-width: 20%;
       text-align: left;
     }
 
@@ -66,6 +69,47 @@
       background-color: #222020;
       color: #ccc;
       margin-right: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .containerFormulaire {
+    .titreFormulaire {
+      h2 {
+        font-size: 2rem;
+
+        padding: 10px;
+      }
+    }
+
+    .table {
+      max-width: 80vw;
+      max-height: 55vh;
+      height: 45vh;
+      padding: 5px;
+      margin-top: 3vh;
+
+      .header {
+        max-width: 78vw;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        height: 4vh;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+      }
+      .colActions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+          width: 15vw;
+          height: 2.5vh;
+        }
+      }
     }
   }
 }

@@ -6,7 +6,7 @@ import Fond from "./fond";
 function Formulaire() {
     const { contacts, deleteContact, updateContact } = useContext(ContactContext);
     const [editContactId, setEditContactId] = useState(null); 
-    const [editedContact, setEditedContact] = useState({ id: "", name: "", phone: "" }); // Pour stocker les données modifiées
+    const [editedContact, setEditedContact] = useState({ id: "", name: "", phone: "" }); 
 
     const startEditing = (contact) => {
         setEditContactId(contact.id);  
@@ -32,7 +32,7 @@ function Formulaire() {
         <div className="containerFormulaire">
             <Fond />
             <div className="titreFormulaire">
-                <h2> Mes Contacts</h2>
+                <h2> My Contacts</h2>
             </div>
 
             <div className="table">
@@ -76,8 +76,8 @@ function Formulaire() {
                                 <div className="colName">{contact.name}</div>
                                 <div className="colPhone">{contact.phone}</div>
                                 <div className="colActions">
-                                    <button type="button" onClick={() => startEditing(contact)}>Modifier</button>
-                                    <button onClick={() => deleteContact(contact.id)} type="button">Supprimer</button>
+                                    <button type="button" onClick={() => startEditing(contact)}>Modify</button>
+                                    <button onClick={() => deleteContact(contact.id)} type="button">Delete</button>
                                 </div>
                             </>
                         )}
